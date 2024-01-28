@@ -11,7 +11,4 @@ def list_all(mongo_collection):
     lists all documents in a collection
     """
     docs = mongo_collection.find()  # Find returns a cursor object
-    for doc in docs:
-        # Iterate over the cursor to get each document
-        return doc
-    return doc
+    return [doc for doc in docs]
