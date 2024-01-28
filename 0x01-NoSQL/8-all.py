@@ -14,3 +14,4 @@ def list_all(mongo_collection):
     for doc in docs:
         # Iterate over the cursor to get each document
         return doc
+    return doc
